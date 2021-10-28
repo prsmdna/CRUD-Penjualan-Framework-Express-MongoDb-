@@ -10,7 +10,7 @@ module.exports = {
         email: "atazkia27@gmail.com", // your email
         url: "", // your website
       },
-      servers: ["http://localhost:3003/api"],
+      servers: ["http://localhost:5000/api"],
     },
     paths: {
       "/produk": {
