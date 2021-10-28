@@ -1,0 +1,390 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "belajar",
+    "contact": {}
+  },
+  "host": "localhost:8000",
+  "basePath": "/api",
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/produk": {
+      "get": {
+        "summary": "GET ALL PRODUK",
+        "tags": ["produk"],
+        "operationId": "GETALLPRODUK",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "post": {
+        "summary": "ADD",
+        "tags": ["produk"],
+        "operationId": "ADD",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/ADDREQUEST"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/produk/6173672d7415d30572e1b542": {
+      "get": {
+        "summary": "GET BY ID",
+        "tags": ["produk"],
+        "operationId": "GETBYID",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/produk/61742486360102a592711d76": {
+      "delete": {
+        "summary": "DELETE",
+        "tags": ["produk"],
+        "operationId": "DELETE",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "UPDATE",
+        "tags": ["produk"],
+        "operationId": "UPDATE",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/distributor": {
+      "get": {
+        "summary": "GET ALL",
+        "tags": ["distributor"],
+        "operationId": "GETALL",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "post": {
+        "summary": "ADD",
+        "tags": ["distributor"],
+        "operationId": "PostADD",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/ADDREQUEST1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "delete": {
+        "summary": "DELETE",
+        "tags": ["distributor"],
+        "operationId": "DeleteDELETE",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/distributor/61742e083805e08d9cf030c8": {
+      "get": {
+        "summary": "GET BY ID",
+        "tags": ["distributor"],
+        "operationId": "GetGETBYID",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/distributor/6177b1b7a4ceed373b4b3da1": {
+      "put": {
+        "summary": "UPDATE",
+        "tags": ["distributor"],
+        "operationId": "PutUPDATE",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UPDATEREQUEST"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/pembelian": {
+      "get": {
+        "summary": "GET ALL",
+        "tags": ["pembelian"],
+        "operationId": "GetGETALL",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "post": {
+        "summary": "ADD",
+        "tags": ["pembelian"],
+        "operationId": "PostADD1",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/ADDREQUEST2"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/pembelian/61767f9a781a470863b73cc2": {
+      "put": {
+        "summary": "UPDATE",
+        "tags": ["pembelian"],
+        "operationId": "PutUPDATE1",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UPDATEREQUEST1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "delete": {
+        "summary": "DELETE",
+        "tags": ["pembelian"],
+        "operationId": "DeleteDELETE1",
+        "deprecated": false,
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ADDREQUEST": {
+      "title": "ADDREQUEST",
+      "example": {
+        "namaProduk": "Bimoli",
+        "laba": 1000
+      },
+      "type": "object",
+      "properties": {
+        "namaProduk": {
+          "type": "string"
+        },
+        "laba": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": ["namaProduk", "laba"]
+    },
+    "ADDREQUEST1": {
+      "title": "ADDREQUEST1",
+      "example": {
+        "nama": "Bumiku"
+      },
+      "type": "object",
+      "properties": {
+        "nama": {
+          "type": "string"
+        }
+      },
+      "required": ["nama"]
+    },
+    "UPDATEREQUEST": {
+      "title": "UPDATEREQUEST",
+      "example": {
+        "nama": "Malika"
+      },
+      "type": "object",
+      "properties": {
+        "nama": {
+          "type": "string"
+        }
+      },
+      "required": ["nama"]
+    },
+    "ADDREQUEST2": {
+      "title": "ADDREQUEST2",
+      "example": {
+        "produk": "6177b05051c2c234bbabdbbb",
+        "hargaBeli": 6000,
+        "jumlah": 200,
+        "distributor": "6174307b476439096c9636be"
+      },
+      "type": "object",
+      "properties": {
+        "produk": {
+          "type": "string"
+        },
+        "hargaBeli": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "jumlah": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "distributor": {
+          "type": "string"
+        }
+      },
+      "required": ["produk", "hargaBeli", "jumlah", "distributor"]
+    },
+    "UPDATEREQUEST1": {
+      "title": "UPDATEREQUEST1",
+      "example": {
+        "produk": "61767f2f781a470863b73cbf",
+        "distributor": "61742e083805e08d9cf030c8",
+        "hargaBeli": 9000,
+        "jumlah": 200
+      },
+      "type": "object",
+      "properties": {
+        "produk": {
+          "type": "string"
+        },
+        "distributor": {
+          "type": "string"
+        },
+        "hargaBeli": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "jumlah": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": ["produk", "distributor", "hargaBeli", "jumlah"]
+    }
+  },
+  "tags": [
+    {
+      "name": "produk"
+    },
+    {
+      "name": "distributor"
+    },
+    {
+      "name": "pembelian"
+    }
+  ]
+}
