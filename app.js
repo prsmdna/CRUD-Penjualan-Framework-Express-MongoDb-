@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+require("dotenv/config");
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUI = require("swagger-ui-express");
 // const swaggerDocument = require("./tes.json");
@@ -38,7 +39,7 @@ require("./app/routes/produk.routes")(app);
 require("./app/routes/distributor.routes")(app);
 require("./app/routes/pembelian.routes")(app);
 
-const PORT = 5000;
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+//listen
+app.listen(process.env.PORT, () => {
+  console.log(`Server berjalan di port ${process.env.PORT}`);
 });
